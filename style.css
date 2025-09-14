@@ -19,10 +19,11 @@
 
 .about i {
     color: orangered;
+    font-size: 12px;
 }
 
 .icons i {
-    font-size: 18 !important;
+    font-size: 12px;
     border-radius: 50%;
     padding: 4px;
     padding-right: 20px;
@@ -604,7 +605,41 @@ footer {
     text-align: center;
 }
 
+/* CONTACT PAGE ORIGINAL CSS */
+.cu-img {
+    width: 100%;
+    position: relative;
+}
 
+.cu-text {
+    position: absolute;
+    top: 38%;
+    left: 43%;
+    text-align: center;
+}
+
+.cu-text p {
+    background-color: white;
+    color: black;
+}
+
+.cu-text h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.getin {
+    padding-left: 80px;
+}
+
+.getin span {
+    padding-bottom: 10px;
+}
+
+.para {
+    padding-left: 80px;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/

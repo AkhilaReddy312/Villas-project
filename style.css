@@ -484,16 +484,16 @@ video img {
 
 .agents iframe {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 10%;
 }
 
 .agents form {
-    height: 620px;
+    height: 562px;
     width: 455px;
     position: absolute;
     left: 60%;
-    top: 50%;
+    top: 35%;
     padding: 15px;
     border-radius: 5px;
     background-color: white;
@@ -551,8 +551,8 @@ form textarea {
     display: flex;
     gap: 20px;
     position: relative;
-    right: 915px;
-    bottom: 111px;
+    right: 750px;
+    bottom: 70px;
 }
 
 .phone {
@@ -601,7 +601,9 @@ footer {
     height: 60px;
     background-color: black;
     color: white;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -640,6 +642,112 @@ footer {
 .para {
     padding-left: 80px;
 }
+
+.conn {
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    right: -82px;
+    bottom: 1px;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* keep icon + text aligned */
+    gap: 20px;
+    /* reduce gap */
+    width: 300px;
+    height: 80px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px grey;
+    white-space: nowrap;
+    /* prevents phone number from breaking into new line */
+}
+
+.emailadd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 300px;
+    height: 80px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px grey;
+    white-space: nowrap;
+}
+
+.fa-solid,
+.fa-regular {
+    font-size: 40px;
+    color: orangered;
+}
+
+.call p,
+.emailadd p {
+    font-size: 15px;
+    color: grey;
+    margin: 0px;
+}
+
+.contactform {
+    height: 562px;
+    width: 500px;
+    position: absolute;
+    left: 55%;
+    top: 73%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px grey;
+    font-size: 18px;
+}
+
+.contactform label {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.contactform input {
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+
+.contactform textarea {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+
+.contactform #send {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.googlemap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.googlemap iframe {
+    width: 80%;
+    height: 400px;
+}
+
+
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -806,7 +914,7 @@ footer {
     }
 
     .card-container {
-        padding-left: 30px;
+        padding-right: 20px;
     }
 
     .cards {
@@ -880,6 +988,8 @@ footer {
         gap: 15px;
         right: 0px;
         top: 81px;
+        left: 20px;
+        position: relative;
     }
 
     .phone,
@@ -910,6 +1020,24 @@ footer {
         text-align: center;
         width: 410px;
         margin-top: 73px;
+    }
+
+    /* contact page ----------------------------------------- */
+    .contactform {
+        height: 562px;
+        width: 500px;
+        position: absolute;
+        left: 113%;
+        top: 115%;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 5px grey;
+        font-size: 18px;
+    }
+
+    .cu-img {
+        width: 800px;
     }
 
 }
@@ -1149,68 +1277,69 @@ footer {
         text-align: center;
         margin-top: 70px;
     }
+}
 
-    /* --------------------------------------------------------------------------------------------------------------------------------------------- */
-    /* laptop medium */
-    @media (min-width:1024px) and (max-width:1439px) {
-        .top-bar {
-            padding: 10px 40px;
-        }
-
-        .about {
-            gap: 30px;
-        }
-
-        .icons {
-            padding-left: 30%;
-        }
-
-        .icons i {
-            font-size: 18px;
-            padding: 6px 12px;
-        }
-
-        .property-container {
-            gap: 10px;
-            max-width: 1100px;
-            padding: 10px;
-
-        }
-
-        #video-frame {
-            width: 70%;
-            height: 350px;
-            left: 15%;
-            top: 130px;
-        }
-
-        #play-icon {
-            left: 50%;
-            bottom: 130px;
-            font-size: 18px;
-        }
-
-        .boxes {
-            gap: 30px;
-        }
-
-        .box {
-            width: 30%;
-        }
-
-        .card-container {
-            padding-left: 60px;
-        }
-
-        .cards {
-            display: flex;
-            gap: 20px;
-        }
-
-        .card {
-            width: 350px !important;
-            height: 570px !important;
-            padding: 20px;
-            border-radius: 5px;
-        }
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* laptop medium */
+@media (min-width:1024px) and (max-width:1439px) {
+    .top-bar {
+        padding: 10px 40px;
     }
+
+    .about {
+        gap: 30px;
+    }
+
+    .icons {
+        padding-left: 30%;
+    }
+
+    .icons i {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .property-container {
+        gap: 10px;
+        max-width: 1100px;
+        padding: 10px;
+
+    }
+
+    #video-frame {
+        width: 70%;
+        height: 350px;
+        left: 15%;
+        top: 130px;
+    }
+
+    #play-icon {
+        left: 50%;
+        bottom: 130px;
+        font-size: 18px;
+    }
+
+    .boxes {
+        gap: 30px;
+    }
+
+    .box {
+        width: 30%;
+    }
+
+    .card-container {
+        padding-left: 60px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        width: 350px !important;
+        height: 570px !important;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}

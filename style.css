@@ -110,6 +110,10 @@ nav a {
     height: 25px;
 }
 
+.container {
+    max-width: 100%;
+}
+
 /* property container */
 .property-container {
     display: flex;
@@ -127,6 +131,10 @@ nav a {
     max-width: 400px;
     border-radius: 8px;
     height: 380px;
+}
+
+.property-image {
+    position: relative;
 }
 
 /* middle coulum */
@@ -148,6 +156,21 @@ nav a {
     margin-top: 15px;
     width: 500px;
 
+}
+
+.sticker {
+    background-color: orangered;
+    padding: 25px;
+    width: 101px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1160px;
+    left: 100px;
+}
+
+.sticker img {
+    width: 70px;
 }
 
 /* Right Column (Features) */
@@ -1002,6 +1025,12 @@ footer {
 
     .property-image img {
         width: 600px;
+        max-width: 300px;
+    }
+
+    .sticker {
+        top: 1060px;
+        left: 30px;
     }
 
     .video-text {
@@ -1326,6 +1355,11 @@ footer {
         width: 600px;
     }
 
+    .sticker {
+        top: 1120px;
+        left: 130px;
+    }
+
     .video-text {
         bottom: 200px;
         padding: 0 20px;
@@ -1554,6 +1588,11 @@ footer {
         max-width: 1100px;
         padding: 10px;
 
+    }
+
+    .sticker {
+        top: 1120px;
+        left: 0px;
     }
 
     #video-frame {

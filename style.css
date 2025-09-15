@@ -608,7 +608,7 @@ footer {
 }
 
 /* CONTACT PAGE ORIGINAL CSS */
-.cu-img {
+.cu-img img {
     width: 100%;
     position: relative;
 }
@@ -649,6 +649,7 @@ footer {
     position: relative;
     right: -82px;
     bottom: 1px;
+    width: 300px;
 }
 
 .call {
@@ -745,6 +746,30 @@ footer {
 .googlemap iframe {
     width: 80%;
     height: 400px;
+}
+
+/* PROPERTIES ORIGINAL CSS----------------------- */
+.prop-img img {
+    width: 100%;
+    position: relative;
+}
+
+.prop-text {
+    position: absolute;
+    top: 38%;
+    left: 43%;
+    text-align: center;
+}
+
+.prop-text p {
+    background-color: white;
+    color: black;
+}
+
+.prop-text h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 

@@ -1018,28 +1018,37 @@ footer {
         color: white;
         align-content: center;
         text-align: center;
-        width: 410px;
+        width: 100%;
         margin-top: 73px;
     }
 
     /* contact page ----------------------------------------- */
     .contactform {
-        height: 562px;
-        width: 500px;
-        position: absolute;
-        left: 113%;
-        top: 115%;
-        padding: 15px;
-        border-radius: 5px;
-        background-color: white;
-        box-shadow: 0px 0px 5px grey;
-        font-size: 18px;
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
     }
 
     .cu-img {
-        width: 800px;
+        width: 100%;
+        overflow: hidden;
     }
 
+    .cu-text {
+        position: absolute;
+        top: 47%;
+        left: 23%;
+        text-align: center;
+    }
+
+    .para {
+        padding-left: 53px;
+    }
+
+    .conn {
+        width: 300px;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1276,6 +1285,45 @@ footer {
         align-content: center;
         text-align: center;
         margin-top: 70px;
+    }
+
+    /* contactpage queries----------------------------- */
+    .cu-img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cu-text {
+        position: absolute;
+        top: 68%;
+        left: 40%;
+        text-align: center;
+    }
+
+    .contactform {
+        position: static;
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .conn {
+        position: static;
+        padding-left: 36%;
+        left: 200px;
+    }
+
+    .call,
+    .emailadd {
+        width: 50%;
+    }
+
+    .googlemap iframe {
+        width: 90%;
+        height: 350px;
+    }
+
+    .cu-text h2 {
+        font-size: 34px;
     }
 }
 
